@@ -139,7 +139,7 @@ const App = () => {
         <h1 className="text-[1.1em] font-bold">
           Ish vaqti:{" "}
           <span className="text-[.9em] font-light">
-            Dush - Jum, 10:00 - 18:30
+            Dush - Shan, 10:00 - 18:30
           </span>
         </h1>
         <h1 className="text-[1.1em] font-bold">
