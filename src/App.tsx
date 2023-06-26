@@ -42,7 +42,7 @@ const App = () => {
         <Card className="w-[50%] h-auto box bg-[#ffffff09] rounded-2xl overflow-hidden max-[1000px]:w-full max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center">
           <Box className="w-full h-full backdrop-filter backdrop-blur p-10 text-white max-[400px]:p-7">
             <h1 className="text-[1.5em] text-center mb-7 max-[400px]:text-[1.2em]">
-              Formani to'ldiring siz bilan bog'lanishadi!
+              Tez orada siz bilan bog'lanamiz!
             </h1>
             <form
               onSubmit={handleSubmit}
