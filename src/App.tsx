@@ -148,17 +148,15 @@ const App = () => {
             {import.meta.env.VITE_PHONE}
           </span>
         </h1>
-        <h1 className="text-[1.1em] font-bold">
-          Email: <span className="text-[.9em] font-light">info@sarbon.com</span>
-        </h1>
         <h1 className="text-[1.1em] font-bold text-center">
           Manzil: <br />
-          <span className="text-[.9em] font-light">
-            Sarbon Agency, 100100, Uzbekistan, Tashkent city, Labzak-2A street,
-            1
-          </span>
+          <a
+            href="https://maps.windows.com/?form=WNAMSH&collection=point.41.287201_69.249941_Point"
+            className="text-[.9em] font-light">
+            Univer kids, 100033, O'zbekiston, Toshkent shaxar, Yunusobod 5
+            mavzesi
+          </a>
         </h1>
-        <p>© Barcha huquqlar himoyalangan 2023.</p>
       </footer>
     </>
   );
