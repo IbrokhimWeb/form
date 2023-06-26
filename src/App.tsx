@@ -11,7 +11,7 @@ const App = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const { name, phone, message } = data;
-    let post = `--- BOG'CHA --- %0A%0A`;
+    let post = `--- ${"BOG'CHA"} --- %0A%0A`;
     post += `👨‍💼 Mijoz: <b> ${name}</b> %0A`;
     post += `📞 Raqam: <b> ${phone}</b> %0A`;
     post += `💭 Xabar: <b> ${message}</b> %0A`;
