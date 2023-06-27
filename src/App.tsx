@@ -38,9 +38,9 @@ const App = () => {
 
   return (
     <>
-      <main className="w-full mt-10 flex justify-center gap-10 text-white max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:mt-0">
-        <Card className="w-[50%] h-auto box bg-[#ffffff09] rounded-2xl overflow-hidden max-[1000px]:w-full max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center">
-          <Box className="w-full h-full backdrop-filter backdrop-blur p-10 text-white max-[400px]:p-7">
+      <main className="w-full mt-10 flex justify-center gap-10 text-black max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:mt-0">
+        <Card className="w-[50%] h-auto box bg-[#3a3a3a11] rounded-2xl overflow-hidden max-[1000px]:w-full max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center">
+          <Box className="w-full h-full backdrop-filter backdrop-blur p-10 text-black max-[400px]:p-7">
             <h1 className="text-[1.5em] text-center mb-7 max-[400px]:text-[1.2em]">
               Tez orada siz bilan bog'lanamiz!
             </h1>
@@ -58,25 +58,25 @@ const App = () => {
                     setData((prev) => ({ ...prev, name: e.target.value }))
                   }
                   sx={{
-                    input: { color: "white" },
+                    input: { color: "black" },
                     "&:hover": {
                       borderColor: "red",
                     },
                     "& label": {
-                      color: "white",
+                      color: "black",
                     },
                     "& label.Mui-focused": {
-                      color: "white",
+                      color: "black",
                     },
                     "& .MuiOutlinedInput-root": {
                       "& fieldset": {
-                        borderColor: "white",
+                        borderColor: "black",
                       },
                       "&:hover fieldset": {
-                        borderColor: "white",
+                        borderColor: "black",
                       },
                       "&.Mui-focused fieldset": {
-                        borderColor: "white",
+                        borderColor: "black",
                       },
                     },
                   }}
@@ -91,25 +91,25 @@ const App = () => {
                     setData((prev) => ({ ...prev, phone: e.target.value }))
                   }
                   sx={{
-                    input: { color: "white" },
+                    input: { color: "black" },
                     "&:hover": {
                       borderColor: "red",
                     },
                     "& label": {
-                      color: "white",
+                      color: "black",
                     },
                     "& label.Mui-focused": {
-                      color: "white",
+                      color: "black",
                     },
                     "& .MuiOutlinedInput-root": {
                       "& fieldset": {
-                        borderColor: "white",
+                        borderColor: "black",
                       },
                       "&:hover fieldset": {
-                        borderColor: "white",
+                        borderColor: "black",
                       },
                       "&.Mui-focused fieldset": {
-                        borderColor: "white",
+                        borderColor: "black",
                       },
                     },
                   }}
@@ -120,7 +120,7 @@ const App = () => {
                 minRows={3}
                 value={data?.message}
                 placeholder="Xabaringiz*"
-                className="w-full p-5 rounded-md bg-transparent border-2"
+                className="w-full p-5 rounded-md bg-transparent border-2 border-black"
                 onChange={(e) =>
                   setData((prev) => ({ ...prev, message: e.target.value }))
                 }
@@ -135,7 +135,7 @@ const App = () => {
           </Box>
         </Card>
       </main>
-      <footer className="relative w-full h-[50vh] flex flex-col items-center justify-center gap-3 py-10 text-white">
+      <footer className="relative w-full h-[30vh] flex flex-col items-center justify-center gap-3 py-10 text-black">
         <h1 className="text-[1.1em] font-bold">
           Ish vaqti:{" "}
           <span className="text-[.9em] font-light">
@@ -152,7 +152,7 @@ const App = () => {
           Manzil: <br />
           <a
             href="https://maps.windows.com/?form=WNAMSH&collection=point.41.287201_69.249941_Point"
-            className="text-[.9em] font-light">
+            className="text-[.9em] font-light text-blue-500">
             Univer kids, 100033, O'zbekiston, Toshkent shaxar, Yunusobod 5
             mavzesi
           </a>
