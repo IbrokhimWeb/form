@@ -20,12 +20,8 @@ const App = () => {
 
     api.open(
       "GET",
-      `https://api.telegram.org/bot${
-        import.meta.env.VITE_TOKEN
-      }/sendMessage?chat_id=${
-        import.meta.env.VITE_CHAT_ID
-      }&text=${post}&parse_mode=html`,
-      true
+      `https://api.telegram.org/bot${import.meta.env.VITE_TOKEN}/sendMessage?chat_id=${import.meta.env.VITE_CHAT_ID || "-1001699907395"}&text=${post}&parse_mode=html`
+      , true
     );
     api.send();
     setData({
