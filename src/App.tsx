@@ -14,14 +14,18 @@ const App = () => {
     let post = `--- ${"BOG'CHA"} --- %0A%0A`;
     post += `👨‍💼 Mijoz: <b> ${name}</b> %0A`;
     post += `📞 Raqam: <b> ${phone}</b> %0A`;
-    post += `💭 Xabar: <b> ${message}</b> %0A`;
+    // post += `💭 Xabar: <b> ${message}</b> %0A`;
 
     const api = new XMLHttpRequest();
 
     api.open(
       "GET",
-      `https://api.telegram.org/bot${import.meta.env.VITE_TOKEN}/sendMessage?chat_id=${import.meta.env.VITE_CHAT_ID || "-1001699907395"}&text=${post}&parse_mode=html`
-      , true
+      `https://api.telegram.org/bot${
+        import.meta.env.VITE_TOKEN
+      }/sendMessage?chat_id=${
+        import.meta.env.VITE_CHAT_ID || "-1001699907395"
+      }&text=${post}&parse_mode=html`,
+      true
     );
     api.send();
     setData({
@@ -33,8 +37,8 @@ const App = () => {
   };
 
   return (
-    <>
-      <main className="w-full mt-10 flex justify-center gap-10 text-black max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:mt-0">
+    <div className="overflow-y-auto">
+      <main className="w-full h-[50vh] mt-10 flex items-center justify-center gap-10 text-black max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:mt-0">
         <Card className="w-[50%] h-auto box bg-[#3a3a3a11] rounded-2xl overflow-hidden max-[1000px]:w-full max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center">
           <Box className="w-full h-full backdrop-filter backdrop-blur p-10 text-black max-[400px]:p-7">
             <h1 className="text-[1.5em] text-center mb-7 max-[400px]:text-[1.2em]">
@@ -42,7 +46,8 @@ const App = () => {
             </h1>
             <form
               onSubmit={handleSubmit}
-              className="w-full h-full flex flex-col gap-5">
+              className="w-full h-full flex flex-col gap-5"
+            >
               <div className="w-full flex items-center gap-5 max-[1200px]:flex-col max-[1000px]:flex-row max-[800px]:flex-col">
                 <TextField
                   required
@@ -111,7 +116,7 @@ const App = () => {
                   }}
                 />
               </div>
-              <TextareaAutosize
+              {/* <TextareaAutosize
                 required
                 minRows={3}
                 value={data?.message}
@@ -120,11 +125,12 @@ const App = () => {
                 onChange={(e) =>
                   setData((prev) => ({ ...prev, message: e.target.value }))
                 }
-              />
+              /> */}
               <Button
                 type="submit"
                 variant="contained"
-                className="bg-green-600">
+                className="bg-green-600"
+              >
                 Yuborish
               </Button>
             </form>
@@ -148,13 +154,14 @@ const App = () => {
           Manzil: <br />
           <a
             href="https://maps.windows.com/?form=WNAMSH&collection=point.41.287201_69.249941_Point"
-            className="text-[.9em] font-light text-blue-500">
+            className="text-[.9em] font-light text-blue-500"
+          >
             Univer kids, 100033, O'zbekiston, Toshkent shaxar, Yunusobod 5
             mavzesi
           </a>
         </h1>
       </footer>
-    </>
+    </div>
   );
 };
 
