@@ -50,7 +50,6 @@ const App = () => {
             >
               <div className="w-full flex items-center gap-5 max-[1200px]:flex-col max-[1000px]:flex-row max-[800px]:flex-col">
                 <TextField
-                  required
                   fullWidth
                   type="text"
                   label="Ismingiz"
