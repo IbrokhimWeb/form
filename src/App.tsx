@@ -136,7 +136,7 @@ const App = () => {
           </Box>
         </Card>
       </main>
-      <footer className="relative w-full h-[30vh] flex flex-col items-center justify-center gap-3 py-10 text-black">
+      {/* <footer className="relative w-full h-[30vh] flex flex-col items-center justify-center gap-3 py-10 text-black">
         <h1 className="text-[1.1em] font-bold">
           Ish vaqti:{" "}
           <span className="text-[.9em] font-light">
@@ -159,7 +159,7 @@ const App = () => {
             mavzesi
           </a>
         </h1>
-      </footer>
+      </footer> */}
     </div>
   );
 };
